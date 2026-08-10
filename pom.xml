@@ -5,7 +5,7 @@
 	<groupId>com.kk</groupId>
 	<artifactId>maven-web-application-kkfunda</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	
 	<name>maven-web-application</name>
 
@@ -21,7 +21,7 @@
 		<spring.version>5.3.34</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://15.207.54.73:8639/kkfunda/</sonar.host.url>
+		<sonar.host.url>http://13.203.75.108:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>password</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
-	      <url>http://172.31.40.189:8081/repository/flipkart-release/</url>
+	      <url>http://13.233.158.187:8081/repository/jio-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Snapshot Nexus Repository </name>
-	      <url>http://172.31.40.189:8081/repository/flipkart-snapshot/</url>
+	      <url>http://13.233.158.187:8081/repository/jio-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -122,6 +122,11 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
+			 <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>5.2.0.4988</version>
+        </plugin>
 
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
@@ -134,6 +139,12 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			 <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>5.0.0.4389</version>
+        </plugin>
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

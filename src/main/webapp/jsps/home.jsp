@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to KK FUNDA DEVOPS AWS Portal 🚀</h1>
+    <marquee> <h1> WELCOME TO B10 KKDEVOPS BANGALORE </h1>    </marquee> 
     <h3>Training | Development | Consulting</h3>
 </header>
 
